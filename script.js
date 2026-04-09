@@ -19,7 +19,7 @@ function getRecommendation() {
 
     console.log("Sending data:", data); // ✅ Debug log
 
-    fetch("http://127.0.0.1:5000/predict", {
+    fetch("https://devops-recommender.onrender.com/predict", {
         method: "POST",
         mode: "cors",   // ✅ IMPORTANT FIX
         headers: {
