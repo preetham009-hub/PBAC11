@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Tool Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>DevOps Tool Recommender</h2>
+
+    <input type="number" id="team_size" placeholder="Team Size">
+
+    <select id="project_type">
+        <option value="web">Web</option>
+        <option value="mobile">Mobile</option>
+        <option value="enterprise">Enterprise</option>
+    </select>
+
+    <select id="tech_stack">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="nodejs">NodeJS</option>
+        <option value=".net">.NET</option>
+    </select>
+
+    <select id="ci_cd">
+        <option value="yes">CI/CD Required</option>
+        <option value="no">No CI/CD</option>
+    </select>
+
+    <select id="cloud">
+        <option value="AWS">AWS</option>
+        <option value="Azure">Azure</option>
+        <option value="GCP">GCP</option>
+    </select>
+
+    <select id="monitoring">
+        <option value="yes">Monitoring Required</option>
+        <option value="no">No Monitoring</option>
+    </select>
+
+    <button onclick="getRecommendation()">Get Recommendation</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
